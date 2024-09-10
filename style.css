@@ -1,20 +1,81 @@
-h1{
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(1, 144, 255);
-    color: white;
+/* Define a fonte padrão, remove margens e preenchimentos, e define a cor de fundo do corpo */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada em todo o corpo */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    background-color: #f0f2f5; /* Define a cor de fundo do corpo */
+    display: flex; /* Utiliza Flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
 }
 
+/* Estiliza o cabeçalho da página */
+header {
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+    background-color: #0190ff; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao cabeçalho */
+    width: 100%; /* Define a largura do cabeçalho como 100% do contêiner pai */
+}
+
+/* Estiliza o formulário de busca */
 .form-busca {
-display: flex;
-justify-content: center;
-gap: 5px;
+    display: flex; /* Utiliza Flexbox para organizar os elementos */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 10px; /* Adiciona um espaço entre os elementos */
+    margin-bottom: 20px; /* Adiciona uma margem inferior ao formulário de busca */
+}
+
+/* Estiliza os campos de entrada de texto */
+input[type="text"] {
+    padding: 10px; /* Adiciona preenchimento interno ao campo de texto */
+    font-size: 16px; /* Define o tamanho da fonte no campo de texto */
+    width: 250px; /* Define a largura do campo de texto */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara ao campo de texto */
+    border-radius: 5px; /* Arredonda os cantos da borda do campo de texto */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao campo de texto */
+}
+
+/* Estiliza os botões */
+button {
+    padding: 10px 15px; /* Adiciona preenchimento interno ao botão */
+    font-size: 16px; /* Define o tamanho da fonte no botão */
+    border: none; /* Remove a borda padrão do botão */
+    background-color: #0190ff; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estiliza o botão quando o mouse passa sobre ele */
+button:hover {
+    background-color: #016bb5; /* Muda a cor de fundo quando o botão é focado */
+}
+
+.partefora {
+    display: flex; /* Define flexbox para centralizar a div info */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: flex-start; /* Alinha os itens ao início (esquerda) */
+    background-color: white; /* Adiciona um fundo branco para destaque */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 .info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 450px; /* Define uma largura fixa para os elementos internos */
 }
 
+.info p {
+    margin: 5px 0; /* Remove espaçamento extra para manter alinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+strong {
+    color: #555; /* Cor para o texto em negrito */
+}
